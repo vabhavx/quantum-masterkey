@@ -1,0 +1,11 @@
+# ═══════════════════════════════════════════════════════
+# OPERATION GRAPESHOT SALVO — AUTOMATION SCHEDULE
+# Slot 1: 08:00 AM — Slot 2: 12:30 PM
+# Slot 3: 05:00 PM — Slot 4: 08:30 PM
+# Monday to Friday Only
+# ═══════════════════════════════════════════════════════
+
+0 8 * * 1-5 /Users/vaibhavchhimpa/AntiPalantir/salvo_launch.sh
+30 12 * * 1-5 /Users/vaibhavchhimpa/AntiPalantir/salvo_launch.sh
+0 17 * * 1-5 /Users/vaibhavchhimpa/AntiPalantir/salvo_launch.sh
+30 20 * * 1-5 /Users/vaibhavchhimpa/AntiPalantir/salvo_launch.sh
