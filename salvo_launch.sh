@@ -83,8 +83,8 @@ for acc in "${ACCOUNTS[@]}"; do
     acc_file="$DATA_DIR/leads_$acc.csv"
     if [ -f "$acc_file" ]; then
         docker exec mautic_app php /var/www/html/salvo.php "$acc" "$acc_file" >> "$LOG" 2>&1 &
-        # DEEP STEALTH STAGGER: Sleep 5 minutes between launching each account
-        sleep 300
+        # GHOST OMEGA STAGGER: Sleep 10 minutes between launching each account
+        sleep 600
     fi
 done
 

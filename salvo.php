@@ -30,12 +30,12 @@ if (!$account || !isset($accounts[$account]) || !$batchFile) {
 $batchFile = str_replace('/Users/vaibhavchhimpa/AntiPalantir/salvo_data/', '/var/www/html/salvo_data/', $batchFile);
 
 // ── Defines & Global Helpers ─────────────────────────────────────
-define('SENT_FILE',   '/var/www/html/salvo_data/sent.txt');
+define('SENT_FILE',   '/var/www/html/salvo_data/master_registry.txt');
 define('LOG_FILE',    '/var/www/html/salvo_data/log.txt');
 define('DAILY_FILE',  '/var/www/html/salvo_data/daily_' . date('Y-m-d') . '.json');
-define('DAILY_MAX',   40); // DEEP STEALTH: 40 emails/day for survival
-define('SLEEP_BASE',  900); // 15 minutes base interval
-define('SLEEP_JITTER', 180); // +/- 3 minutes randomization
+define('DAILY_MAX',   40); // GHOST OMEGA: 40 emails/day for survival
+define('SLEEP_BASE',  1200); // 20 minutes base interval
+define('SLEEP_JITTER', 240); // +/- 4 minutes randomization
 
 function logit($msg) {
     file_put_contents(LOG_FILE, date('[Y-m-d H:i:s]') . " $msg\n", FILE_APPEND);
@@ -140,6 +140,8 @@ try {
     $transport = new Swift_SmtpTransport('smtp.gmail.com', 587, 'tls');
     $transport->setUsername($account);
     $transport->setPassword($accounts[$account]);
+    $transport->setStreamOptions(['ssl' => ['allow_self_signed' => true, 'verify_peer' => false, 'verify_peer_name' => false]]);
+    $transport->setTimeout(60); 
     $mailer = new Swift_Mailer($transport);
 } catch (Exception $e) {
     logit("[$account] SMTP CONNECT FAILED: " . $e->getMessage());
