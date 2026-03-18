@@ -1,0 +1,33 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# ═══════════════════════════════════════════════════════════════════
+# OPERATION GRAPESHOT SALVO — ALPHA STRIKE THROTTLE PROFILE
+# Rate: 200 messages × 30 runs/hour = 6,000 emails/hour
+# Relay: Elastic Email via Port 2525
+# Domain: johnlick.com / news@johnlick.com
+# ═══════════════════════════════════════════════════════════════════
+
+# QUEUE DISPATCH — 200 emails per run, every 2 minutes = 6,000/hr
+*/2 * * * * www-data php /var/www/html/bin/console mautic:emails:send --message-limit=200 --no-interaction > /var/log/cron.pipe 2>&1
+
+# BROADCASTS (segment blasts) — same 200-cap throttle
+*/2 * * * * www-data php /var/www/html/bin/console mautic:broadcasts:send --limit=200 --no-interaction > /var/log/cron.pipe 2>&1
+
+# LEAD IMPORT — every 2 minutes (processes your 100k CSV fast)
+*/2 * * * * www-data php /var/www/html/bin/console mautic:import --no-interaction > /var/log/cron.pipe 2>&1
+
+# SEGMENT REBUILD — every 15 min (staggered to avoid CPU collision)
+3,18,33,48 * * * * www-data php /var/www/html/bin/console mautic:segments:update --no-interaction > /var/log/cron.pipe 2>&1
+
+# CAMPAIGN TRIGGER — every 15 min
+8,23,38,53 * * * * www-data php /var/www/html/bin/console mautic:campaigns:trigger --no-interaction > /var/log/cron.pipe 2>&1
+
+# CAMPAIGN REBUILD — every 15 min
+13,28,43,58 * * * * www-data php /var/www/html/bin/console mautic:campaigns:rebuild --no-interaction > /var/log/cron.pipe 2>&1
+
+# BOUNCE/WEBHOOK PROCESSING — every 5 min (instant bounce handling = protects Elastic Email account)
+*/5 * * * * www-data php /var/www/html/bin/console mautic:webhooks:process --no-interaction > /var/log/cron.pipe 2>&1
+
+# CLEANUP — daily 3am
+0 3 * * * www-data php /var/www/html/bin/console mautic:maintenance:cleanup --days-old=90 --no-interaction > /var/log/cron.pipe 2>&1

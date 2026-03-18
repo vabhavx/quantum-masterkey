@@ -1,0 +1,76 @@
+[2026-03-18 04:50:13] [drrichachaturvedii@gmail.com] STARTING BATCH: 10 leads (Today total: 2)
+[2026-03-18 04:50:17] [drrichachaturvedii@gmail.com] [1/10] → gdcracknell2029@gmail.com
+[2026-03-18 04:55:13] [pa.sharma.9966@gmail.com] STARTING BATCH: 10 leads (Today total: 2)
+[2026-03-18 04:55:16] [pa.sharma.9966@gmail.com] [1/10] → clauseb@verizon.net
+[2026-03-18 05:00:13] [ch.vabhav@gmail.com] STARTING BATCH: 10 leads (Today total: 2)
+[2026-03-18 05:00:17] [ch.vabhav@gmail.com] [1/10] → fieldyfan@gmail.com
+[2026-03-18 05:02:36] [drrichachaturvedii@gmail.com] FAIL → emily.vite@gmail.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d9443c01a7336-2b06e5ef5a0sm13862415ad.44 - gsmtp
+"
+[2026-03-18 05:05:13] [vabhavv.x@gmail.com] STARTING BATCH: 10 leads (Today total: 1)
+[2026-03-18 05:05:17] [vabhavv.x@gmail.com] [1/10] → lucille264@me.com
+[2026-03-18 05:10:13] [chuggrivers@gmail.com] STARTING BATCH: 10 leads (Today total: 3)
+[2026-03-18 05:10:17] [chuggrivers@gmail.com] [1/10] → renerivas501@gmail.com
+[2026-03-18 05:12:41] [pa.sharma.9966@gmail.com] FAIL → ojedapatrick@gmail.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d9443c01a7336-2b06e62ee85sm12006085ad.77 - gsmtp
+"
+[2026-03-18 05:15:11] [ch.vabhav@gmail.com] FAIL → cheyenne.sambrano@yahoo.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d9443c01a7336-2b06e4314easm14773955ad.21 - gsmtp
+"
+[2026-03-18 05:15:13] [chronossflex@gmail.com] STARTING BATCH: 10 leads (Today total: 0)
+[2026-03-18 05:15:17] [chronossflex@gmail.com] [1/10] → nctxtd@mail.missouri.edu
+[2026-03-18 05:19:20] [vabhavv.x@gmail.com] FAIL → vfknight@yahoo.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d9443c01a7336-2b06e63b294sm14668945ad.84 - gsmtp
+"
+[2026-03-18 05:20:02] [drrichachaturvedii@gmail.com] FAIL → boxxcarjunkie@gmail.com: Expected response code 354 but got an empty response
+[2026-03-18 05:20:13] [ediitoriaa@gmail.com] STARTING BATCH: 10 leads (Today total: 0)
+[2026-03-18 05:20:17] [ediitoriaa@gmail.com] [1/10] → booitsashlyn@aol.com
+[2026-03-18 05:24:16] [chuggrivers@gmail.com] FAIL → hotornotnj@gmail.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d9443c01a7336-2b0704ccc67sm6578995ad.15 - gsmtp
+"
+[2026-03-18 05:25:13] [eeventiss@gmail.com] STARTING BATCH: 10 leads (Today total: 0)
+[2026-03-18 05:25:17] [eeventiss@gmail.com] [1/10] → colorsnshapesedm@gmail.com
+[2026-03-18 05:27:11] [pa.sharma.9966@gmail.com] FAIL → axorov23@wetlabrecords.com: Expected response code 354 but got an empty response
+[2026-03-18 05:28:57] [chronossflex@gmail.com] FAIL → janehopkins@coca-cola.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 98e67ed59e1d1-35bba577690sm377362a91.0 - gsmtp
+"
+[2026-03-18 05:30:13] [jtenzerr@gmail.com] STARTING BATCH: 10 leads (Today total: 0)
+[2026-03-18 05:30:19] [jtenzerr@gmail.com] [1/10] → incmethod@gmail.com
+[2026-03-18 05:32:29] [ediitoriaa@gmail.com] FAIL → josh.parkinson1@yahoo.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d2e1a72fcca58-82a6b541cafsm1255540b3a.12 - gsmtp
+"
+[2026-03-18 05:33:05] [ch.vabhav@gmail.com] FAIL → janehanzelyvb2899@nokiamail.com: Expected response code 354 but got an empty response
+[2026-03-18 05:34:14] [vabhavv.x@gmail.com] FAIL → ilscotty@hotmail.com: Expected response code 354 but got an empty response
+[2026-03-18 05:35:13] [farkhadovmalik@gmail.com] STARTING BATCH: 10 leads (Today total: 0)
+[2026-03-18 05:35:17] [farkhadovmalik@gmail.com] [1/10] → djconcourse@gmail.com
+[2026-03-18 05:36:18] [drrichachaturvedii@gmail.com] FAIL → sliceedwards@yahoo.com: Expected response code 250 but got an empty response
+[2026-03-18 05:38:35] [eeventiss@gmail.com] FAIL → lanef@nursing.upenn.edu: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d2e1a72fcca58-82a6befc046sm1433879b3a.59 - gsmtp
+"
+[2026-03-18 05:38:54] [chuggrivers@gmail.com] FAIL → emmeline.whitehead@lakeviewacademy.com: Expected response code 354 but got an empty response
+[2026-03-18 05:41:23] [chronossflex@gmail.com] FAIL → haywoodkaiya@gmail.com: Expected response code 354 but got an empty response
+[2026-03-18 05:43:24] [jtenzerr@gmail.com] FAIL → babyhamster.phan23@gmail.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 d9443c01a7336-2b06e43141esm13092115ad.20 - gsmtp
+"
+[2026-03-18 05:43:50] [pa.sharma.9966@gmail.com] FAIL → rampiddude@gmail.com: Expected response code 250 but got an empty response
+[2026-03-18 05:46:10] [ediitoriaa@gmail.com] FAIL → antluv706@gmail.com: Expected response code 354 but got an empty response
+[2026-03-18 05:48:03] [ch.vabhav@gmail.com] FAIL → ceciladeb@hotmail.com: Expected response code 250 but got an empty response
+[2026-03-18 05:48:57] [vabhavv.x@gmail.com] FAIL → ferraroe95@aol.com: Expected response code 250 but got an empty response
+[2026-03-18 05:50:37] [drrichachaturvedii@gmail.com] FAIL → burchfield.seth@gmail.com: Expected response code 354 but got an empty response
+[2026-03-18 05:51:43] [farkhadovmalik@gmail.com] FAIL → shynethelistener@yahoo.com: Expected response code 250 but got code "451", with message "451-4.4.2 Timeout - closing connection.
+451-4.4.2  For more information, go to
+451 4.4.2  https://support.google.com/a/answer/3221692 41be03b00d2f7-c741e0b31fasm1286293a12.5 - gsmtp
+"
+[2026-03-18 05:52:36] [eeventiss@gmail.com] FAIL → chaintwist1@originalfahrenheit.com: Expected response code 354 but got an empty response
+[2026-03-18 05:53:14] [chuggrivers@gmail.com] FAIL → brian_201118@yahoo.com: Expected response code 250 but got an empty response
+[2026-03-18 05:57:47] [chronossflex@gmail.com] FAIL → markwayla@yahoo.com: Expected response code 250 but got an empty response
+[2026-03-18 05:59:31] [jtenzerr@gmail.com] FAIL → pena47@gmail.com: Expected response code 354 but got an empty response

@@ -1,0 +1,70 @@
+services:
+  db:
+    image: mariadb:10.6
+    container_name: mautic_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mautic
+      MYSQL_USER: mautic
+      MYSQL_PASSWORD: mauticpassword
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./mariadb.cnf:/etc/mysql/conf.d/mautic.cnf:ro
+    command: >
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "mautic", "-pmauticpassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+    networks:
+      - mautic_net
+
+  mautic:
+    image: mautic/mautic:v4-fpm
+    container_name: mautic_app
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      MAUTIC_DB_HOST: db
+      MAUTIC_DB_PORT: 3306
+      MAUTIC_DB_NAME: mautic
+      MAUTIC_DB_USER: mautic
+      MAUTIC_DB_PASSWORD: mauticpassword
+      MAUTIC_RUN_CRON_JOBS: "true"
+      PHP_MEMORY_LIMIT: 512M
+      PHP_MAX_UPLOAD: 64M
+      PHP_MAX_EXECUTION_TIME: 300
+    volumes:
+      - mautic_data:/var/www/html
+      - ./crontab:/etc/cron.d/mautic-custom
+      - ./salvo.php:/var/www/html/salvo.php
+      - ./salvo_data:/var/www/html/salvo_data
+    networks:
+      - mautic_net
+
+  nginx:
+    image: nginx:alpine
+    container_name: mautic_nginx
+    restart: unless-stopped
+    depends_on:
+      - mautic
+    ports:
+      - "80:80"
+    volumes:
+      - mautic_data:/var/www/html:ro
+      - ./nginx/mautic.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - mautic_net
+
+volumes:
+  db_data:
+  mautic_data:
+
+networks:
+  mautic_net:
+    driver: bridge
